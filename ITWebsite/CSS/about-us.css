@@ -1,0 +1,185 @@
+#hero {
+    width: 100%;
+    height: 40vh;
+    background: 
+        linear-gradient(to right, rgba(0, 0, 0, .5) 60%, rgba(0, 0, 0, 0)),
+        url(./../images/about/teamwork.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+#hero p {
+    font-size: 1.5rem;
+}
+
+#abtBE {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#abtBE img {
+    width: 500px;
+    height: 500px;
+}
+
+#abtBE #text {
+    width: 450px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#abtBE #text h2 {
+    font-size: 2rem;
+}
+
+#abtBE #text p {
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.4;   
+}
+
+#goals {
+    width: 100%;
+    height: 40vh;
+    padding: 40px 100px;
+    background-color: #208237;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+#goals h2 {
+    align-self: center;
+    font-size: 2rem;
+}
+
+#goals ul {
+    font-size: 1.3rem;
+}
+
+#ceo-founder {
+    width: 100%;
+    height: 240vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.3rem;
+}
+
+#ceo-founder img {
+    width: 65vh;
+    height: auto;
+}
+
+#ceo-founder #ceo {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+}
+
+#ceo-founder #founder {
+    display: flex;
+    align-items: center;
+    text-align: right;
+    justify-content: space-around;
+    height: auto;
+}
+
+#ceo-founder #founder img { order: 1; }
+#ceo-founder #founder .text { order -1; }
+#ceo-founder .text { width: 400px; }
+
+#ceo-founder .text h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+#ceo-founder .text ion-icon { font-size: 5rem; }
+
+#team {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    background-color: #3d464e;
+    display: grid;
+    grid-template-areas: 
+        "title title title title title title"
+        "initiatior initiatior initiatior initiatior initiatior initiatior"
+        "founder founder ceo ceo assistant assistant"
+        "dev dev dev dev dev dev"
+        "explorer1 explorer1 explorer1 explorer2 explorer2 explorer2";
+    
+    align-items: center;
+    justify-items: center;
+    grid-row-gap: 40px;
+}
+
+#team h2 {
+    grid-area: title;
+    font-size: 2rem;
+}
+
+#team .initiatior { grid-area: initiatior; }
+#team .founder { grid-area: founder; }
+#team .ceo { grid-area: ceo; }
+#team .assistant { grid-area: assistant; }
+#team .developer { grid-area: dev; }
+#team .explorer1 { grid-area: explorer1; }
+#team .explorer2 { grid-area: explorer2; }
+
+#team img {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    transition: all 500ms ease-out;
+}
+
+#team img:hover {
+    margin-bottom: 20px;
+    transform: scale(1.1);
+}
+
+#team .person p {
+    width: 200px;
+    text-align: center;
+}
+
+#awards {
+    width: 100%;
+    height: 30vh;
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#awards img {
+    width: 150px;
+    height: auto;
+    transition: all 500ms ease-out;
+}
+
+#awards img:hover {
+    margin: 10px;
+    transform: scale(1.2);
+}

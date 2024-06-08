@@ -1,0 +1,70 @@
+#hero {
+    width: 100%;
+    height: 40vh;
+    background: 
+        linear-gradient(to left, rgba(0, 0, 0, .5) 60%, rgba(0, 0, 0, 0)),
+        url(../images/dest/dest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#hero h1 {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+}
+
+#hero p {
+    width: 50%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+#dest {
+    width: 100%;
+    height: auto;
+    padding: 60px 0;
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+}
+
+.dest-container {
+    width: 340px;
+    height: 530px;
+    border: 5px solid #dbd6d1;
+    border-radius: 40px;
+    padding: 0 20px;
+    transition: all 500ms ease-out;
+    pointer-events: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+.dest-container img {
+    width: 100%;
+    height: auto;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.dest-container p {
+    text-align: center;
+}
+
+.dest-container:hover {
+    transform: scale(1.05);
+}
+

@@ -1,0 +1,212 @@
+[type="checkbox"] {
+    display: none;
+}
+
+.hero {
+    width: 100%;
+    height: 40vh;
+    background: 
+        linear-gradient(to left, rgba(0, 0, 0, .5) 60%, rgba(0, 0, 0, 0)),
+        url(../images/store/shopping.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.shop {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-color);
+    padding: 40px;
+}
+
+.shop h2 {
+    text-align: center;
+    font-size: 2rem;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.shop .producten {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.shop h2::before {
+    content: "";
+    background-color: rgba(45, 186, 78, .6);
+    position: absolute;
+    width: 70%;
+    height: 10%;
+    top: 120%;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.shop .product {
+    display: inline-block;
+    line-height: 1.4;
+}
+
+.shop .img {
+    position: relative;
+}
+
+.shop .img ion-icon {
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 10px;
+    visibility: hidden;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 400ms ease;
+    opacity: 0;
+    background-color: var(--main-color);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.shop .img [name="cart"] { display: none; }
+.shop .img input:checked ~ label [name="cart"] { display: block; }
+.shop .img input:checked ~ label [name="cart-outline"] { display: none; }
+
+.shop .img:hover ion-icon {
+    opacity: 1;
+    visibility: visible;
+}
+
+.shop .product img {
+    background-color: var(--secondary-color);
+    width: 200px;
+    height: auto;
+    position: relative;
+}
+
+.shop .product .description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop .product label ion-icon {
+    font-size: 1.5rem;
+    transition: all 400ms;
+    cursor: pointer;
+}
+
+.shop .product .description input:checked ~ label ion-icon {
+    color: red;
+    font-size: 1.7rem;
+}
+
+.shop .product ion-icon:hover {
+    font-size: 1.7rem;
+}
+
+.shop .product .description span {
+    text-decoration: line-through;
+    opacity: .4;
+    color: var(--text-color);
+}
+
+.bundle {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(to bottom right, rgba(0, 0, 0, .7) 30%, rgba(0, 0, 0, .3)), url(../images/store/bundlebg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.bundle img {
+    width: 550px;
+    height: auto;
+}
+
+.bundle #text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 40%;
+}
+
+.bundle #text h2 { font-size: 2.5rem; }
+.bundle #text h3 { font-size: 1.5rem; }
+
+.bundle #text p {
+    font-size: 1.2rem;
+}
+
+.bundle #text li {
+    text-indent: 4rem;
+    list-style-type: none;
+    border-left: 2px solid var(--accent-color);
+    font-size: 1.05rem;
+}
+
+.bundle #text li + li {
+    margin-top: 5px;
+}
+
+.bundle #text button {
+    font-size: 2rem;
+    padding: 20px;
+    background: transparent;
+    border: 3px solid var(--accent-color);
+    transition: all 400ms;
+    cursor: pointer;
+}
+
+.bundle #text button:hover {
+    border-color: var(--text-color);
+    background-color: var(--accent-color);
+}
+
+.bundle #text button:active {
+    background-color: #165d27;
+}
+
+.bundle #heart {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 2.5rem;
+}
+
+.bundle #heart label ion-icon {
+    cursor: pointer;
+    color: white;
+    transition: all 400ms;
+}
+
+.bundle #heart [type="checkbox"]:checked ~ label ion-icon {
+    color: red;
+    font-size: 2.7rem;
+}
+
+.bundle #heart ion-icon:hover {
+    font-size: 2.7rem;
+}

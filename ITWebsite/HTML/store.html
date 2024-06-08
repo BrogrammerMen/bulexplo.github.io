@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="bg">
+    <head>
+        <title>Bulgaria Explore: Магазин</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../images/favicon.png" rel="icon">
+        <link rel="stylesheet" href="../CSS/store.css">
+        <link rel="stylesheet" href="../CSS/general.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img src="./../images/logo.svg" alt="logo" class="logo">
+            </a>
+            <nav class="navbar">
+                <div class="nav-div">
+                    <ion-icon name="home"></ion-icon>
+                    <a class="link" href="index.html">Начало</a>
+                </div>
+                <div class="nav-div">
+                    <ion-icon name="information-circle"></ion-icon>
+                    <a href="about_us.html" class="link">За нас</a>
+                </div>
+                <div class="nav-div">
+                    <ion-icon name="navigate"></ion-icon>
+                    <a class="link" href="dest.html">На къде?</a>
+                </div>
+                <div class="nav-div">
+                    <ion-icon name="storefront"></ion-icon>   
+                    <a class="link active-link" href="store.html">Магазинче</a>
+                </div>
+                <a href="contact.html"><button class="btn">Свържете се с нас</button></a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero fade-in">
+                <h1><span>Мега</span>зин</h1>
+                <p>Големи намаления в момента.</p>
+            </section>
+
+            <section class="shop">
+                <h2>Специални Продукти</h2>
+
+                <div class="producten">
+                    <div class="product">
+                        <div class="img">
+                            <img src="../images/store/storeProducts/backpack.png" alt="backpack">
+                            <input type="checkbox" id="backpack">
+                            <label for="backpack">
+                                <ion-icon title="добави в количката" name="cart-outline"></ion-icon>
+                                <ion-icon title="добавено в количката" name="cart"></ion-icon>
+                            </label>
+                        </div>
+                        <h4>Туристическа Раница</h4>
+                        <div class="description">
+                            <p>84<sup>95</sup> лв.</p>
+                            <input type="checkbox" id="bp-heart">
+                            <label for="bp-heart">
+                                <ion-icon title="харесай" name="heart"></ion-icon>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="img">
+                            <img src="../images/store/storeProducts/beanie.png" alt="beanie">
+                            <input type="checkbox" id="beanie">
+                            <label for="beanie">
+                                <ion-icon title="добави в количката" name="cart-outline"></ion-icon>
+                                <ion-icon title="добавено в количката" name="cart"></ion-icon>
+                            </label>
+                        </div>
+                        <h4>Шапка</h4>
+                        <div class="description">
+                            <p>19<sup>95</sup> лв.</p>
+                            <input type="checkbox" id="beanie-heart">
+                            <label for="beanie-heart">
+                                <ion-icon title="харесай" name="heart"></ion-icon>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="img">
+                            <img src="../images/store/storeProducts/boots.png" alt="boots">
+                            <input type="checkbox" id="boots">
+                            <label for="boots">
+                                <ion-icon title="добави в количката" name="cart-outline"></ion-icon>
+                                <ion-icon title="добавено в количката" name="cart"></ion-icon>
+                            </label>
+                        </div>
+                        <h4>Туристически обувки</h4>
+                        <div class="description">
+                            <p><span class="sale">149<sup>95</span></sup> 99<sup>99</sup> лв.</p>
+                            <input type="checkbox" id="boots-heart">
+                            <label for="boots-heart">
+                                <ion-icon title="харесай" name="heart"></ion-icon>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="img">
+                            <img src="../images/store/storeProducts/bottle.png" alt="bottle">
+                            <input type="checkbox" id="bottle">
+                            <label for="bottle">
+                                <ion-icon title="добави в количката" name="cart-outline"></ion-icon>
+                                <ion-icon title="добавено в количката" name="cart"></ion-icon>
+                            </label>
+                        </div>
+                        <h4>Бутилка за вода</h4>
+                        <div class="description">
+                            <p>12<sup>95</sup> лв.</p>
+                            <input type="checkbox" id="bottle-heart">
+                            <label for="bottle-heart">
+                                <ion-icon title="харесай" name="heart"></ion-icon>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="img">
+                            <img src="../images/store/storeProducts/cup.png" alt="cup">
+                            <input type="checkbox" id="cup">
+                            <label for="cup">
+                                <ion-icon title="добави в количката" name="cart-outline"></ion-icon>
+                                <ion-icon title="добавено в количката" name="cart"></ion-icon>
+                            </label>
+                        </div>
+                        <h4>Чаша</h4>
+                        <div class="description">
+                            <p>9<sup>95</sup> лв.</p>
+                            <input type="checkbox" id="cup-heart">
+                            <label for="cup-heart">
+                                <ion-icon title="харесай" name="heart"></ion-icon>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bundle">
+                <div id="text">
+                    <h2>Специална оферта!</h2>
+                    <h3>Закупете пълен пакет с къмпинг оборудване.</h3>
+                    <p>215<sup>95</sup> лв.</p>
+                    <p>Пакетът включва:</p>
+                    <ul>
+                        <li>Палатка</li>
+                        <li>Туристическа раница</li>
+                        <li>Туристически обувки</li>
+                        <li>Спален чувал</li>
+                        <li>Бутилка за вода</li>
+                    </ul>
+                    <button>Добави към количката</button>
+                </div>
+                <img src="../images/store/storeProducts/bundle.png" alt="bundle">
+                <div id="heart">
+                    <input type="checkbox" id="bundle">
+                    <label for="bundle">
+                        <ion-icon title="харесай" name="heart"></ion-icon>
+                    </label>
+                </div>
+            </section>
+
+            <section class="shop">
+                <div class="producten">
+                    <div class="product">
+                        <div class="img">
+                            <img src="../images/store/storeProducts/hoodie.png" alt="hoodie">
+                            <input type="checkbox" id="hoodie">
+                            <label for="hoodie">
+                                <ion-icon title="добави в количката" name="cart-outline"></ion-icon>
+                                <ion-icon title="добавено в количката" name="cart"></ion-icon>
+                            </label>
+                        </div>
+                        <h4>Худи</h4>
+                        <div class="description">
+                            <p><span class="sale">40<sup>95</sup></span> 25<sup>99</sup> лв</p>
+                            <input type="checkbox" id="hoodie-heart">
+                            <label for="hoodie-heart">
+                                <ion-icon title="харесай" name="heart"></ion-icon>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="img">
+                            <img src="../images/store/storeProducts/poles.png" alt="poles">
+                            <input type="checkbox" id="poles">
+                            <label for="poles">
+                                <ion-icon title="добави в количката" name="cart-outline"></ion-icon>
+                                <ion-icon title="добавено в количката" name="cart"></ion-icon>
+                            </label>
+                        </div>
+                        <h4>Комплект Щеки</h4>
+                        <div class="description">
+                            <p>43<sup>99</sup> лв.</p>
+                            <input type="checkbox" id="poles-heart">
+                            <label for="poles-heart">
+                                <ion-icon title="харесай" name="heart"></ion-icon>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="img">
+                            <img src="../images/store/storeProducts/shirt.png" alt="shirt">
+                            <input type="checkbox" id="shirt">
+                            <label for="shirt">
+                                <ion-icon title="добави в количката" name="cart-outline"></ion-icon>
+                                <ion-icon title="добавено в количката" name="cart"></ion-icon>
+                            </label>
+                        </div>
+                        <h4>Тениска</h4>
+                        <div class="description">
+                            <p>21<sup>00</sup> лв.</p>
+                            <input type="checkbox" id="shirt-heart">
+                            <label for="shirt-heart">
+                                <ion-icon title="харесай" name="heart"></ion-icon>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="img">
+                            <img src="../images/store/storeProducts/sleeping_bag.png" alt="sleeping bag">
+                            <input type="checkbox" id="bag">
+                            <label for="bag">
+                                <ion-icon title="добави в количката" name="cart-outline"></ion-icon>
+                                <ion-icon title="добавено в количката" name="cart"></ion-icon>
+                            </label>
+                        </div>
+                        <h4>Спален чувал</h4>
+                        <div class="description">
+                            <p><span class="sale">39<sup>80</sup></span> 29<sup>85</sup> лв.</p>
+                            <input type="checkbox" id="bag-heart">
+                            <label for="bag-heart">
+                                <ion-icon title="харесай" name="heart"></ion-icon>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <div class="img">
+                            <img src="../images/store/storeProducts/tent.png" alt="tent">
+                            <input type="checkbox" id="tent">
+                            <label for="tent">
+                                <ion-icon title="добави в количката" name="cart-outline"></ion-icon>
+                                <ion-icon title="добавено в количката" name="cart"></ion-icon>
+                            </label>
+                        </div>
+                        <h4>Палатка</h4>
+                        <div class="description">
+                            <p><span class="sale">71<sup>55</sup></span> 66<sup>65</sup> лв.</p>
+                            <input type="checkbox" id="tent-heart">
+                            <label for="tent-heart">
+                                <ion-icon title="харесай" name="heart"></ion-icon>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div id="up">
+                <h3>Намерете ни:</h3>
+                <div>
+                    <img src="./../images/logo.svg" alt="logo">
+                    <div id="media">
+                        <div id="phone">
+                            <ion-icon name="call"></ion-icon>
+                            <p>+359895345275</p>
+                        </div>
+                        <div id="email">
+                            <ion-icon name="mail"></ion-icon>
+                            <p>bul.explo@gmail.com</p>
+                        </div>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <ion-icon name="logo-youtube"></ion-icon>
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </div>
+                    <div id="office">
+                        <ion-icon name="location"></ion-icon>
+                        <p>Варна, България</p>
+                    </div>
+                </div>
+            </div>
+            <div id="down">
+                <p>Bulgaria Explore &copy; Copyright 2024 | Privacy Policy</p>
+                <p>Проект, изготвен от Теодор Трифонов 8В клас</p>
+            </div>
+        </footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

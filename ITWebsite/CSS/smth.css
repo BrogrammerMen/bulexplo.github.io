@@ -1,0 +1,25 @@
+main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main h1 {
+    font-size: 2.5rem;
+}
+
+main div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+main div p,
+main div ion-icon {
+    font-size: 1.2rem;
+}

@@ -1,0 +1,348 @@
+#hero {
+    width: 100%;
+    height: 90vh;
+    background-image: url(../images/home/belogradchik.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#hero #text {
+    font-size: 2rem;
+    order: -1;
+}
+
+#hero #text h1 {
+    line-height: 4;
+}
+
+#hero #text button {
+    font-size: 1.7rem;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+#hero #video p {
+    text-align: center;
+    width: 445px;
+}
+
+#hero #video div {
+    position: relative;
+}
+
+#hero #video img {
+    box-shadow: 0px 0px 150px rgb(255, 255, 255);
+}
+
+#hero #video div ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(34, 34, 34, .8);
+    font-size: 2.5rem;
+    padding: 30px;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+#hero #video div ion-icon:hover {
+    animation: play-btn-anim 1.5s;
+}
+
+
+#about-us {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#about-us img {
+    width: 560px;
+    height: auto;
+}
+
+#about-us div {
+    text-align: center;
+    width: 443px;
+}
+
+#about-us button {
+    margin-top: 40px;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+#about-us h2 {
+    margin-bottom: 30px;
+}
+
+#about-us p {
+    font-size: 1.1rem;
+}
+
+#dest {
+    background-color: rgba(11, 36, 71, 0.6);
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    display: grid;
+/*     grid-template-columns: calc((100% - 900px) / 2) 400px 100px 400px calc((100% - 900px) / 2);
+    grid-template-rows: 50px calc((100% - 50px) / 2) calc((100% - 50px) / 2); */
+    grid-template-columns: 2fr 3fr 1fr 3fr 2fr;
+    grid-template-rows: 1fr 4fr 4fr;
+    justify-items: center;
+    align-items: center;
+}
+
+#dest h2 {
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+}
+
+#dest img {
+    width: 400px;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+    margin-top: 60px
+}
+
+#dest img:first-of-type {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: start;
+}
+
+#dest img:last-of-type {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    justify-self: end;
+}
+
+#dest button {
+    font-size: 1.4rem;
+    padding: 15px 25px;
+}
+
+#dest a {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    justify-self: end;
+}
+
+#dest p {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
+    width: 700px;
+    justify-self: start;
+}
+
+#store {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+#store img {
+    height: 100%;
+    width: auto;
+    border-radius: 0;
+}
+
+#store div {
+    text-align: center;
+    height: 100%;
+    order: -1;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#store h2 {
+    font-size: 3rem;
+}
+
+#store button {
+    font-size: 2.2rem;
+    padding: 10px;
+}
+
+#store p {
+    font-size: 2rem;
+    width: 660px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+}
+
+.contact .text {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.contact .text p {
+    width: 380px;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    position: relative;
+}
+
+.contact p {
+    line-height 1.7;
+    font-size: 1.2rem;
+}
+
+.contact form {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 500px;
+    padding: 50px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.contact form .inpbox {
+    position: relative;
+    width: 100%;
+}
+
+.contact .inpbox .inp {
+    width: 100%;
+    color: white;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid var(--accent-color);
+    font-size: 1rem;
+    margin-bottom: 5%;
+    z-index: 2;
+    margin-bottom: 40px;
+}
+
+.contact .inpbox label {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    color: white;
+    z-index: -1;
+    transition: .5s;
+}
+
+.contact .inpbox .inp:focus ~ label,
+.contact .inpbox .inp:valid ~ label,
+.contact .inpbox textarea:valid ~ label,
+.contact .inpbox textarea:focus ~ label {
+    color: var(--text-color);
+    font-size: 0.75rem;
+    transform: translateY(-20px);
+}
+
+.contact .btns {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .btns * {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+
+.contact .inpbox textarea {
+    width: 100%;
+    height: 110px;
+    resize: none;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 3px solid var(--accent-color);
+    font-size: 1rem;
+    margin-bottom: 5%;
+    z-index: 2;
+    color: white;
+}
+
+.contact .inpbox label[for=message] {
+    top: 3px;
+    left: 3px;
+}
+
+#cookies {
+    position: fixed;
+    width: 400px;
+    background-color: #222;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    bottom: 2%;
+    left: 100%;
+    animation: cookiesIntro 1s;
+    animation-timing-function: ease;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    transition: all 2s ease;
+    z-index: 99;
+}
+
+#cookies *:not(#cookiesBtn) {
+    width: 100%;
+}
+
+#cookies p {
+    text-align: center;
+}
+
+#cookies button {
+    padding: 5px 10px;
+    font-size: 1.1rem;
+}
+
+@keyframes cookiesIntro {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-105%);
+    }
+}
+
+@keyframes play-btn-anim {
+    20% { transform: translate(-50%, -50%) scale(1.1); }
+    40% { transform: translate(-50%, -50%) scale(1.1) rotate(-20deg); }
+    60% { transform: translate(-50%, -50%) scale(1.1) rotate(20deg); }
+    80% { transform: translate(-50%, -50%) scale(1.1) rotate(-20deg); }
+    90% { transform: translate(-50%, -50%) scale(1.1) rotate(0deg); }
+    100% { transform: transalte(-50%, -50%) scale(1); }
+}

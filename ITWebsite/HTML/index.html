@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="bg">
+    <head>
+        <title>Bulgaria Explore: Начало</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="./../CSS/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="./../CSS/general.css">
+        <link rel="icon" href="../images/favicon.png">
+    </head>
+    <body>
+        <header>
+            <a href="index.html">
+                <img src="./../images/logo.svg" alt="logo" class="logo">
+            </a>
+            <nav class="navbar">
+                <div class="nav-div">
+                    <ion-icon name="home"></ion-icon>
+                    <a class="link active-link" href="index.html">Начало</a>
+                </div>
+                <div class="nav-div">
+                    <ion-icon name="information-circle"></ion-icon>
+                    <a href="about_us.html" class="link">За нас</a>
+                </div>
+                <div class="nav-div">
+                    <ion-icon name="navigate"></ion-icon>
+                    <a class="link" href="dest.html">На къде?</a>
+                </div>
+                <div class="nav-div">
+                    <ion-icon name="storefront"></ion-icon>   
+                    <a class="link" href="store.html">Магазинче</a>
+                </div>
+                <a href="contact.html"><button class="btn">Свържете се с нас</button></a>
+            </nav>
+        </header>
+        <main>
+            <section id="cookies">
+                <p>Този сайт, по някаква причина, използва бисквитки.</p>
+                <img src="../images/home/cookies.jpg" alt="cookies">
+                <button id="cookiesBtn" class="btn">Yes, of course</button>
+            </section>
+
+            <section id="hero">
+                <div id="video" class="anim">
+                    <a target="_blank" title="Това е България" href="https://www.youtube.com/watch?v=1R4tUEsahX4">
+                        <div>
+                            <img width="445" src="https://i.ytimg.com/vi/1R4tUEsahX4/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&amp;rs=AOn4CLB-sfGYjpo3GyiED9IsiInSmSKqxA" alt="Това е България">
+                            <ion-icon name="play"></ion-icon>
+                        </div>
+                    </a>
+                    <p>Гледайте официалния трейлър на GlobusMediaGroup, който ще Ви въведе в красотата на България.</p>
+                </div>
+                <div id="text" class="anim">
+                    <h1>Преоткрий <span>България</span></h1>
+                    <p>България е диаманат, притежаващ<br> от всичко по-малко.</p>
+                    <a href="dest.html"><button class="btn">Виж как!</button></a>
+                </div>
+            </section>
+
+            <section id="about-us">
+                <img src="./../images/home/about_us.jpg" alt="about us"> 
+                <div>
+                    <h2>За Нас</h2>
+                    <p>Bulgaria Explore (BulExplo) е българска коорпорация с нестопанска цел, основана през 2018 година с намерение: лесно и бързо преоткриване на красотата на българската земя и от чужденци, и от местни. Нашият екип прекара по-голямата част от миналото десетилетие, <span>преоткривайки</span> България. Благодарение на тяхната упорита работа, ние сме способни да предлагаме високо качествени услуги. Предоставяме голям избор от български дестинации за следващата ви почивка. НО ТОВА НЕ Е ВСИЧКО 😱. В нашия онлайн магазин можете да намерите туристическо оборудване, заедно с битови аксесоари, защото животът е хубав.</p>
+                    <a href="about_us.html"><button class="btn">Разберете повече</button></a>
+                </div>
+            </section>
+
+            <section id="dest">
+                <h2>Дестинации</h2>
+                <img src="./../images/home/koncheto.jpg" alt="koncheto ridge">
+                <img src="./../images/tsarevets.jpg" alt="tsarevets fortress">
+
+                <p>Тук могат да се видят само някои от най-интересните ни дестинации за разглеждане.<br>Със големия избор от места всеки тип турист може да си намери перфектната почивка.</p>
+                <a href="dest.html"><button class="btn">Да пътуваме!</button></a>
+            </section>
+
+            <section id="store">
+                <img src="./../images/home/merch.jpg" alt="merch">
+                <div>
+                    <h2>Магазин</h2>
+                    <p>Не се отива на почивка, необорудван. Затова Ви представяме нашия онлайн магазин. Всичко нужно за една пълноценна екскурзия може да се намери там.</p>
+                    <a href="store.html"><button class="btn">Разгледайте</button></a>
+                </div>
+            </section>
+
+            <section class="contact">
+                <div class="text">
+                    <h2>Свържете се с нас</h2>
+                    <div class="random-line"></div>
+                    <p>Чрез Вашата обратна връзка ние можем да подобрим нашите услуги и да Ви предоставим по-добро преживяване.</p>
+                </div>
+
+                <form action="smth.html">
+                    <div class="inpbox">
+                        <input class="inp" type="text" required>
+                        <label for="fname">Име</label>
+                    </div>
+
+                    <div class="inpbox">
+                        <input class="inp" type="text" required>
+                        <label for="lname">Фамилия</label>
+                    </div>
+                    <div class="inpbox">
+                        <input class="inp" type="email" required>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="inpbox">
+                        <textarea required></textarea>
+                        <label for="message">Съобщение</label>
+                    </div>
+
+                    <div class="btns">
+                        <input type="submit" class="btn" value="Изпрати">
+                        <input type="reset" class="btn" value="Изчисти">
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <div id="up">
+                <h3>Намерете ни:</h3>
+                <div>
+                    <img src="./../images/logo.svg" alt="logo">
+                    <div id="media">
+                        <div id="phone">
+                            <ion-icon name="call"></ion-icon>
+                            <p>+359895345275</p>
+                        </div>
+                        <div id="email">
+                            <ion-icon name="mail"></ion-icon>
+                            <p>bul.explo@gmail.com</p>
+                        </div>
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <ion-icon name="logo-youtube"></ion-icon>
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </div>
+                    <div id="office">
+                        <ion-icon name="location"></ion-icon>
+                        <p>Варна, България</p>
+                    </div>
+                </div>
+            </div>
+            <div id="down">
+                <p>Bulgaria Explore &copy; Copyright 2024 | Privacy Policy</p>
+                <p>Проект, изготвен от Теодор Трифонов 8В клас</p>
+            </div>
+        </footer>
+
+        <script src="../JS/main.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
+<!-- tozi sajt, po nqkakwa prichina izpolzwa biskwitki-->
